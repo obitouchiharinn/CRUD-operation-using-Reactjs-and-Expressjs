@@ -1,0 +1,132 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #0066cc;
+    color: white;
+  }
+  
+  .logo {
+    font-size: 24px;
+    font-weight: bold;
+    letter-spacing: 1px;
+  }
+  
+  .nav a {
+    margin-left: 20px;
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    transition: color 0.3s ease;
+  }
+  
+  .nav a:hover {
+    color: #ffdd57;
+  }
+  
+
+  /* /////////////////////////Form//////////////////////////////////////// */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(135deg, #f0f4ff, #e8f0ff);
+  min-height: 100vh;
+}
+
+
+.form-container {
+  max-width: 650px;
+  margin: 50px auto;
+  padding: 35px 30px;
+  background-color: #ffffff;
+  border-radius: 18px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.07);
+  transition: transform 0.3s ease;
+}
+
+.form-container:hover {
+  transform: translateY(-3px);
+}
+
+.form-container h2 {
+  text-align: center;
+  font-size: 28px;
+  font-weight: 600;
+  color: #4a3aff;
+  margin-bottom: 25px;
+}
+
+.appointment-form {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.form-group,
+.form-group-half > div {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 6px;
+}
+
+input,
+select,
+textarea {
+  padding: 12px 14px;
+  border-radius: 10px;
+  border: 1.5px solid #ccd5e0;
+  font-size: 15px;
+  transition: border 0.2s, box-shadow 0.2s;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+  border-color: #4a3aff;
+  box-shadow: 0 0 0 3px rgba(74, 58, 255, 0.1);
+  outline: none;
+}
+
+textarea {
+  resize: vertical;
+  min-height: 90px;
+}
+
+.form-group-half {
+  display: flex;
+  gap: 20px;
+}
+
+
+
+.submit-btn {
+  background: linear-gradient(135deg, #4a3aff, #6d5cff);
+  color: white;
+  padding: 14px;
+  font-size: 16px;
+  font-weight: bold;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.submit-btn:hover {
+  background: linear-gradient(135deg, #372dfc, #5848ff);
+}
+
+.submit-btn:active {
+  transform: scale(0.98);
+}
