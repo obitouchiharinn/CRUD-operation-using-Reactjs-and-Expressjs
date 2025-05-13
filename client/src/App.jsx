@@ -10,7 +10,7 @@ function App() {
     <Router>
       <Routes>
 
-      <Route path='/BHome' element={<BHome /> } />
+      <Route path='/' element={<BHome /> } />
       <Route path='/Data' element={<Data /> } />
       <Route path="/edit/:id" element={<Edit_Data />} />
 
